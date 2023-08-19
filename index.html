@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Product preview</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        margin: 0px;
+        padding: 0px;
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 100px;
+      }
+      .hero-image {
+        width: 300px;
+        height: 500px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .section2 {
+        width: 300px;
+        height: 500px;
+        background-color: #ffffff;
+        padding-left: 20px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .title{
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        opacity: 0.5;
+        padding-top: 20px;
+      }
+      h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 35px;
+        width: 250px;
+      }
+      .content{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        opacity: 0.6;
+        line-height: 20px;
+        width: 250px;
+        padding-top: 0px;
+      }
+      .price{
+        display: flex;
+        vertical-align: center;
+      }
+      .price .main-price{
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35px;
+        color: darkgreen;
+        align-items: center;
+      }
+      .price .small-price{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        text-decoration: line-through;
+        opacity: 0.5;
+      }
+      .cart-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(28, 65, 28);
+        margin: 0px 50px 0px 30px;
+        padding: 10px;
+        border-radius: 7px;
+      }
+      .cart-btn a{
+        text-decoration: none;
+        color: white;
+        padding: 0px 5px
+      }
+      .cart-btn img{
+        width: 20px;
+        height: 20px;
+      }
+      .attribution{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="images/image-product-desktop.jpg" alt="" class="hero-image" />
+      <div class="section2">
+        <p class="title">Perfume</p>
+        <h2>Gabrielle Essence Eau De Parfum</h2>
+        <p class="content">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <p class="main-price">$149.99</p>
+          <p class="small-price">$169.99</p>
+        </div>
+        <div class="cart-btn">
+          <img src="images/icon-cart.svg" alt="" />
+          <a class="cart-btn" href="#"> Add to Cart </a>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
